@@ -15,22 +15,22 @@ app.get("/", (req, res) => {
 
 ////-----------------------------Description Page for each project------------------------------------------------//
 
-app.get("/:project/description", (req, res) => {
-    console.log("/:project/: ", req.params.project);
+// app.get("/:project/description", (req, res) => {
+//     console.log("/:project/: ", req.params.project);
 
-    const { project } = req.params;
-    const selectedProject = projJson.find((item) => item.directory == project);
-    console.log("projJson: ", projJson);
-    console.log("selectedProject: ", selectedProject);
-    if (!selectedProject) {
-        return res.sendStatus(404);
-    } else {
-        res.render("description", {
-            projJson,
-            selectedProject,
-        });
-    }
-});
+//     const { project } = req.params;
+//     const selectedProject = projJson.find((item) => item.directory == project);
+//     console.log("projJson: ", projJson);
+//     console.log("selectedProject: ", selectedProject);
+//     if (!selectedProject) {
+//         return res.sendStatus(404);
+//     } else {
+//         res.render("description", {
+//             projJson,
+//             selectedProject,
+//         });
+//     }
+// });
 
 ////-----------------------------File-sources------------------------------------------------//
 

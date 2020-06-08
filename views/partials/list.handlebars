@@ -1,19 +1,16 @@
 {{#projJson}}
     <div class=
-    "{{#if ../homeP}}project{{/if}}
-    {{#if ../desc}}project-desc{{/if}}"
+    "project-div"
     id="{{directory}}">
         <a href="/{{directory}}/description/"
             class="link-name" target="_blank">
-            <h4 {{#if ../desc}}class="desc-projNames"{{/if}}>{{name}}</h4>
+            <h4>{{name}}</h4>
         </a>
-        {{#if ../pic}}
         <div class="img-div">
             {{!-- change the href below to the heroku link --}}
             <a href="/{{directory}}/description/" target="_blank"><img class='img-home' src='/{{directory}}/projPic.png'>
             </a>
         </div>
-        {{/if}}
     </div>
 {{/projJson}}
 
