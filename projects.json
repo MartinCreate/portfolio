@@ -1,5 +1,20 @@
 [
     {
+        "name": "trackerX",
+        "directory": "trackerX",
+        "description": "(work-in-progress) A workout tracker that allows the user to create workouts, track them, and view the tracked data."
+    },
+    {
+        "name": "amJam Social Network",
+        "directory": "social_network",
+        "description": "A musician-oriented social network for organizing casual jam sessions"
+    },
+    {
+        "name": "Imageboard",
+        "directory": "imageboard",
+        "description": "Am imageboard on which individuals can upload their images with title, description, and artist name. Users can leave comments on images and click through images in a modal that pops up when clicking on an image"
+    },
+    {
         "name": "Connect 4",
         "directory": "connect-4",
         "description": "This was a weekend-project (whereas most other projects were finished within 1 day). Along with diagonal-victory-checks the more challenging aspects of this project came from adapting the code to make the game entirely keyboard-playable. With the right and left arrow keys one can select a column and with space/enter one can drop one's chip. With the up/down arrow keys one can select 'Play Again', and once 'Play Again' is selected one can use the down arrow key to select the 'Reset Score' button. Apart from the functionality, I'm particularly happy with the aesthetic of this project. It took me a lot of experimenting to settle on a color pallette and button layout that looked pleasant."
