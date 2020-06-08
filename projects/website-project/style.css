@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+header {
+    height: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#logo {
+    height: 30px;
+    padding-left: 25px;
+    top: 15px;
+    position: absolute;
+}
+
+#hbmenu {
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+
+#hbmenu:hover {
+    filter: invert();
+}
+
+/* POPOUT MENU */
+#hamburger-menu {
+    background-color: rgba(0, 0, 0, 0.425);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+#hamburger-menu.on {
+    visibility: visible;
+}
+
+#menu {
+    height: 100%;
+    width: 300px;
+    max-width: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.on #menu {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+#menu div {
+    margin: 10px 0;
+}
+
+#toplink {
+    padding-top: 50px;
+}
+.hb_links a {
+    padding-top: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.hb_links a:hover {
+    color: lightblue;
+}
+
+#x {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: gray;
+    padding-right: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 3px;
+}
+#x:hover {
+    cursor: pointer;
+    color: black;
+}
+
+#logout {
+    font-size: 14px;
+}
+
+/* MIDDLE BANNER SECTION */
+#midsection img {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    filter: brightness(0.6);
+}
+
+#midsection {
+    position: relative;
+    background-color: lightgray;
+}
+
+#welcomeText {
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 55%;
+    left: 0;
+    right: 0;
+}
+
+#getStarted {
+    font-size: 25px;
+    color: #cc6502;
+    background-color: #f5cb33;
+    width: 200px;
+    border: 3px #cc6502 solid;
+    padding: 5px 15px;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+#getStarted:hover {
+    filter: brightness(0.7);
+}
+
+/* LOWER-HALF */
+.lowerHalf {
+    position: relative;
+    background-color: lightgray;
+    height: 400px;
+}
+
+.lowerHalf img {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.lowerHalf p {
+    font-size: 18px;
+}
+
+.text {
+    width: 70%;
+    display: inline-block;
+}
+
+.top .left {
+    position: absolute;
+    width: 40%;
+    display: block;
+    left: 10%;
+    top: 10%;
+}
+
+.top .right {
+    position: absolute;
+    width: 40%;
+    display: block;
+    right: 10%;
+    top: 10%;
+}
+
+.bottom .left {
+    position: absolute;
+    width: 40%;
+    display: block;
+    left: 10%;
+    top: 200px;
+}
+
+.bottom .right {
+    position: absolute;
+    width: 40%;
+    display: block;
+    right: 10%;
+    top: 200px;
+}
+
+footer {
+    background-color: rgb(95, 94, 94);
+    height: 40px;
+}
+
+footer p {
+    color: white;
+    font-style: bold;
+    font-size: 12px;
+    margin-left: 40px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+/* POPUP MODAL TEXTBOX */
+#modal {
+    background-color: rgba(0, 0, 0, 0.425);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal.on {
+    visibility: visible;
+}
+
+#modalBox {
+    height: 250px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 40px;
+    position: relative;
+}
+
+#modalBox p {
+    padding-top: 10px;
+}
+
+#x2 {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    text-decoration: none;
+    color: gray;
+    padding-right: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 3px;
+}
+#x2:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* FIRST BREAKPOINT FOR 700px - 500px */
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .lowerHalf {
+        position: relative;
+        background-color: lightgray;
+        height: 600px;
+    }
+
+    .box {
+        position: static;
+        width: 100%;
+        display: block;
+    }
+
+    .top .left {
+        position: static;
+        width: 90%;
+        display: block;
+        padding-top: 40px;
+        margin-left: 7%;
+    }
+
+    .top .right {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+
+    .bottom .left {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+
+    .bottom .right {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+}
+
+/* MOBILE VERSION */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #logo {
+        height: 30px;
+        padding-left: 0px;
+        position: absolute;
+    }
+
+    #hbmenu {
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    /* MIDSECTION BANNER, PHONE */
+    #midsection img {
+        height: 250px;
+        min-width: 0;
+        overflow: scroll;
+    }
+
+    #welcomeText {
+        font-size: 22px;
+        font-style: italic;
+        color: white;
+        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 270px;
+    }
+
+    #getStarted {
+        font-size: 22px;
+        color: #cc6502;
+        background-color: #f5cb33;
+        width: 160px;
+        border: 3px #cc6502 solid;
+        padding: 5px 15px;
+        border-radius: 30px;
+        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: 140px;
+        left: 0;
+        right: 0;
+    }
+
+    /* BOTTOM PART, PHONE*/
+
+    .lowerHalf {
+        position: relative;
+        background-color: lightgray;
+        height: 650px;
+    }
+
+    .box {
+        position: static;
+        width: 100%;
+        display: block;
+    }
+
+    .top .left {
+        position: static;
+        width: 90%;
+        display: block;
+        padding-top: 20px;
+        margin-left: 3%;
+    }
+
+    .top .right {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 15px;
+        margin-left: 3%;
+    }
+
+    .bottom .left {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 15px;
+        margin-left: 3%;
+    }
+
+    .bottom .right {
+        position: static;
+        width: 90%;
+        display: block;
+        margin-top: 15px;
+        margin-left: 3%;
+    }
+}
+
+/* MASSIVE SCREEN VERSION */
+@media screen and (min-width: 1500px) and (max-width: 10000px) {
+    header {
+        height: 5vh;
+        padding: 1vh;
+    }
+
+    #logo {
+        height: 3vh;
+        padding-left: 2vh;
+    }
+
+    #hbmenu {
+        height: 3vh;
+        top: 1vh;
+        right: 2vh;
+    }
+
+    /* MIDDLE BANNER SECTION MASSIVE SCREEN*/
+    #midImg {
+        position: relative;
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #midsection img {
+        overflow: scroll;
+        filter: brightness(0.6);
+    }
+
+    #welcomeText {
+        font-size: 3vh;
+    }
+
+    #getStarted {
+        font-size: 3vh;
+        width: 7em;
+        border: 3px #cc6502 solid;
+        padding: 5px 15px;
+        border-radius: 5em;
+    }
+
+    /* LOWER HALF MASSIVE VERSION */
+    .lowerHalf p {
+        font-size: 2vh;
+    }
+
+    .lowerHalf {
+        height: 50vh;
+    }
+
+    .lowerHalf img {
+        height: 8vh;
+        width: 8vh;
+        margin-right: 2vh;
+    }
+
+    .bottom .left {
+        top: 20vh;
+    }
+
+    .bottom .right {
+        top: 20vh;
+    }
+
+    footer {
+        height: 5vh;
+    }
+
+    footer p {
+        font-size: 1.5vh;
+        margin-left: 2vh;
+        padding-top: 1vh;
+    }
+}

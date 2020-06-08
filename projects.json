@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Connect 4",
+        "directory": "connect-4",
+        "description": "This was a weekend-project (whereas most other projects were finished within 1 day). Along with diagonal-victory-checks the more challenging aspects of this project came from adapting the code to make the game entirely keyboard-playable. With the right and left arrow keys one can select a column and with space/enter one can drop one's chip. With the up/down arrow keys one can select 'Play Again', and once 'Play Again' is selected one can use the down arrow key to select the 'Reset Score' button. Apart from the functionality, I'm particularly happy with the aesthetic of this project. It took me a lot of experimenting to settle on a color pallette and button layout that looked pleasant."
+    },
+    {
+        "name": "Spotify Search",
+        "directory": "spotify-search",
+        "description": "This project was an exercise in ajax requests and handlebars. It has a fully functional search (that accesses actual spotify data). An infinite scroll function can be activated by typing the following at the end of the Url, loading the page, and then submitting a search: ?scroll=infinitely."
+    },
+    {
+        "name": "Welcome Page",
+        "directory": "website-project",
+        "description": "One of the first projects. In order to become more acquainted with the basics of CSS, this project was built without the use of flex-box or grid. Features: Multi-screen-size adaptibility; popout menu (click on the top-right hamburger menu); a modal that pops up 1 second after opening the site."
+    },
+    {
+        "name": "Incremental Search",
+        "directory": "incremental-search",
+        "description": "An exercise in ajax requests and incremental auto-suggestion."
+    },
+    {
+        "name": "Pane",
+        "directory": "pane",
+        "description": "An early project to gain familiarity with DOM eventlisteners. Click and drag the bar in the middle to see the New York City skyline light up."
+    },
+    {
+        "name": "Kitty Carousel",
+        "directory": "kitty_carousel",
+        "description": "An exercise in using Javascript to interact with HTML and CSS to create a carousel of images."
+    },
+    {
+        "name": "Ticker",
+        "directory": "ticker",
+        "description": "A ticker, presenting several clickable headlines from the Deutsche Welle news. They circulate continuously, creating the illusion of an endless stream of headlines."
+    }
+]
