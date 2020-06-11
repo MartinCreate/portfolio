@@ -38,4 +38,4 @@ app.use(express.static("./projects"));
 app.use(express.static("./public"));
 
 ////------Listen on a port------////
-app.listen(8080, console.log("ehportfolio server listening..."));
+app.listen(8080, console.log("portfolio server listening..."));

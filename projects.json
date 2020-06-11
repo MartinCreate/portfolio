@@ -2,26 +2,97 @@
     {
         "name": "trackerX",
         "directory": "trackerX",
-        "description": "(work-in-progress) A workout tracker that allows the user to create workouts, track them, and view the tracked data."
+        "description": "(work-in-progress) A workout tracker that allows the user to create workouts, track them, and view the tracked data.",
+        "features": [
+            "create workout",
+            "create your own unit of measure",
+            "create/add exercise",
+            "track workout",
+            "add sets",
+            "view past workout data",
+            "determine repititions per set",
+            "register/login",
+            "add up to 2 units of measure"
+        ],
+        "tech": ["Node.js", "Express", "React", "PostgreSQL"],
+        "url": "https://trackerx-m.herokuapp.com/"
     },
     {
-        "name": "amJam Social Network",
+        "name": "Social Network - amJam",
         "directory": "social_network",
-        "description": "A musician-oriented social network for organizing casual jam sessions"
+        "description": "A musician-oriented social network for organizing casual jam sessions.",
+        "features": [
+            "private chat",
+            "upload profile picture",
+            "public chat",
+            "add personal bio to profile page",
+            "make/accept/decline friend requests",
+            "register/login",
+            "search other users"
+        ],
+        "tech": [
+            "Socket.io",
+            "Redux",
+            "React",
+            "Node.js",
+            "Express",
+            "PostgreSQL"
+        ],
+        "url": "https://bc-socialnetwork.herokuapp.com/"
     },
     {
         "name": "Imageboard",
         "directory": "imageboard",
-        "description": "Am imageboard on which individuals can upload their images with title, description, and artist name. Users can leave comments on images and click through images in a modal that pops up when clicking on an image"
+        "description": "A single-page application for uploading and commenting on images. For demonstration purposes the images were taken from reddit.com/r/doodles.",
+        "features": [
+            "upload image",
+            "modal for viewing individual images",
+            "comment on images",
+            "infinite scroll"
+        ],
+        "tech": ["Vue.js", "AWS", "Node.js", "Express", "PostgreSQL"],
+        "url": "https://bc-imageboard.herokuapp.com/"
+    },
+    {
+        "name": "Petition",
+        "directory": "petition",
+        "description": "An online petition",
+        "features": [
+            "canvas for virtual signature",
+            "delete account",
+            "view all other signees",
+            "reset password by email",
+            "view other signees by city",
+            "register/login",
+            "add/edit profile information"
+        ],
+        "tech": ["Node.js", "Handlebars", "Express", "PostgreSQL"],
+        "url": "https://petitionmartin.herokuapp.com/"
     },
     {
         "name": "Connect 4",
         "directory": "connect-4",
-        "description": "This was a weekend-project (whereas most other projects were finished within 1 day). Along with diagonal-victory-checks the more challenging aspects of this project came from adapting the code to make the game entirely keyboard-playable. With the right and left arrow keys one can select a column and with space/enter one can drop one's chip. With the up/down arrow keys one can select 'Play Again', and once 'Play Again' is selected one can use the down arrow key to select the 'Reset Score' button. Apart from the functionality, I'm particularly happy with the aesthetic of this project. It took me a lot of experimenting to settle on a color pallette and button layout that looked pleasant."
+        "description": "A two-player game where the first player to align 4 of their chips vertically, horizontally or diagonally wins the game.",
+        "features": [
+            "playable with mouse or keyboard",
+            "(Play Again) clears board",
+            "scorekeeping",
+            "(Reset Score) clears board and resets score"
+        ],
+        "tech": ["Javascript", "HTML", "CSS"],
+        "url": "https://martincreate.github.io/bc-connect4/"
     },
     {
         "name": "Spotify Search",
         "directory": "spotify-search",
-        "description": "This project was an exercise in ajax requests and handlebars. It has a fully functional search (that accesses actual spotify data). An infinite scroll function can be activated by typing the following at the end of the Url, loading the page, and then submitting a search: ?scroll=infinitely."
+        "description": "A spotify API that allows the user to search artists and albums that are currently on spotify. Clicking on a search result redirects the user to the spotify page corresponding to the artist or album that was clicked on.",
+        "features": [
+            "search-bar",
+            "search results link to spotify page",
+            "search by artist/album",
+            "infinite scroll"
+        ],
+        "tech": ["Ajax", "Handlebars", "Node.js", "Spotify API"],
+        "url": ""
     }
 ]

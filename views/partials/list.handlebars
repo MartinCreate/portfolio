@@ -2,15 +2,40 @@
     <div class=
     "project-div"
     id="{{directory}}">
-        <a href="/{{directory}}/description/"
-            class="link-name" target="_blank">
+        <div class="project-info">
             <h4>{{name}}</h4>
-        </a>
+            <p class="proj-desc">{{description}}</p>
+            <div class="features-div-container">
+                <span class="features-title">Features</span> 
+                <div class="features-div">
+                {{#each features}} <li>{{this}}</li> {{/each}}
+
+                </div>
+            </div>
+            <div class="tech-div">{{#each tech}} <span class="tech">{{this}}</span> {{/each}}</div>
+        </div>
         <div class="img-div">
-            {{!-- change the href below to the heroku link --}}
-            <a href="/{{directory}}/description/" target="_blank"><img class='img-home' src='/{{directory}}/projPic.png'>
+            <a href="{{url}}" target="_blank">
+                <img class='project-img' src='/{{directory}}/projPic.png'>
             </a>
         </div>
     </div>
 {{/projJson}}
+{{!-- {{#projJson}}
+    <div class=
+    "project-div"
+    id="{{directory}}">
+        <div class="project-info">
+            <h4>{{name}}</h4>
+            <p>{{description}}</p>
+            <p>Features: {{features}}</p>
+            <div class="tech-div">{{#each tech}} <span class="tech">{{this}}</span> {{/each}}</div>
+        </div>
+        <div class="img-div">
+            <a href="{{url}}" target="_blank">
+                <img class='project-image' src='/{{directory}}/projPic.png'>
+            </a>
+        </div>
+    </div>
+{{/projJson}} --}}
 

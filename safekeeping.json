@@ -1,0 +1,57 @@
+[
+    {
+        "name": "trackerX",
+        "directory": "trackerX",
+        "description": "(work-in-progress) A workout tracker that allows the user to create workouts, track them, and view the tracked data.",
+        "features": "register/login; create workout; create exercise; add sets; determine repititions per set; add up to 2 units of measure (e.g. KG, seconds/repitition); create your own unit of measure; track workout; view past workout data",
+        "tech": ["Node.js", "Express", "React", "PostgreSQL"],
+        "url": "https://trackerx-m.herokuapp.com/"
+    },
+    {
+        "name": "Social Network - amJam",
+        "directory": "social_network",
+        "description": "A musician-oriented social network for organizing casual jam sessions",
+        "features": "private chat (among friends); public chat (open to anyone who is logged in); search other users; make/accept/decline friend requests; add personal bio to profile page; upload profile picture; register/login",
+        "tech": [
+            "Socket.io",
+            "Redux",
+            "React",
+            "Node.js",
+            "Express",
+            "PostgreSQL"
+        ],
+        "url": ""
+    },
+    {
+        "name": "Imageboard",
+        "directory": "imageboard",
+        "description": "A single-page application for uploading and commenting on images. For demonstration purposes the images were taken from reddit.com/r/doodles",
+        "features": "upload image and give it a title, description, and artist name; a modal for viewing individual images; comment on images; infinite scroll when viewing all images",
+        "tech": ["Vue.js", "AWS", "Node.js", "Express", "PostgreSQL"],
+        "url": "https://bc-imageboard.herokuapp.com/"
+    },
+    {
+        "name": "Petition",
+        "directory": "petition",
+        "description": "An online petition",
+        "features": "sign petition by virtual signature on a canvas; view all other signees; view other signees by city; insert profile information (Age, City, Homepage); edit profile information; register/login; reset password; delete account",
+        "tech": ["Node.js", "Handlebars", "Express", "PostgreSQL"],
+        "url": "https://petitionmartin.herokuapp.com/"
+    },
+    {
+        "name": "Connect 4",
+        "directory": "connect-4",
+        "description": "A two-player game where the first player to align 4 of their chips vertically, horizontally or diagonally wins the game",
+        "features": "Mousing over the board shows which player's turn it is and where the chip will fall upon click; playable with mouse or keyboard; scorekeeping; 'Play Again' button clears the board; 'Reset Score' button clears the board and resets the score",
+        "tech": ["Javascript", "HTML", "CSS"],
+        "url": "https://martincreate.github.io/bc-connect4/"
+    },
+    {
+        "name": "Spotify Search",
+        "directory": "spotify-search",
+        "description": "A spotify api that allows the user to search artists and albums that are currently on spotify",
+        "features": "search-bar with input field for search term and button for choosing album/artist; clicking on search result redirects the corresponding artist/album page on spotify.com; infinite scroll (by typing '?scroll=infinitely' at end of url and then searching)",
+        "tech": ["Ajax", "Handlebars", "Node.js", "Spotify API"],
+        "url": ""
+    }
+]
