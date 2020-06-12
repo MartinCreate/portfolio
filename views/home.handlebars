@@ -9,7 +9,7 @@
         </div>
         {{!-- <div id="header-arrow">Arrow Down</div> --}}
         <div class="down-arrow-div">
-            <img class="down-arrow" src="down.png"/>
+            <img class="down-arrow" src="/img/down.png"/>
         </div>
     </header>
     <section class="section tech-stack-section">
@@ -101,7 +101,7 @@
                 PostgreSQL</p>
                 <p>
                     <span>
-                        <img class="tech-icon" src="socket.png"/>
+                        <img class="tech-icon" src="/img/socket.png"/>
                     </span>
                 Socket.IO</p>
                 <p>
@@ -116,19 +116,19 @@
                 <h4>Testing</h4>
                 <p>
                     <span>
-                        <img class="tech-icon" src="jest.png" />
+                        <img class="tech-icon" src="/img/jest.png" />
                     </span>
                 Jest</p>
-                {{!-- <p>
-                    <span>
-                        
-                    </span>
-                Supertest</p> --}}
                 <p>
                     <span>
-                        <img class="tech-icon" src="rtl.png" />
+                        <img class="tech-icon" src="/img/rtl.png" />
                     </span>
                 React Testing Library</p>
+                <p id="supertest">
+                    <span>
+                        <img class="tech-icon" src="/img/supertest.png" />                        
+                    </span>
+                Supertest</p>
             </div>
             <div class="stack vc-div">
                 <h4>Version Control</h4>
@@ -219,8 +219,14 @@
 
         {{!-- <div class="arrow-down">Arrow Down</div> --}}
     </section>
-    <section class="section bigContainer">
-        <div class="container">
+    <section class="section projects">
+        <p class="projects-header section-header">Projects</p>
+        <div id="projects-div">
             {{> list }}
         </div>
     </section>
+    {{!-- <section class="section bigContainer">
+        <div class="container">
+            {{> list }}
+        </div>
+    </section> --}}

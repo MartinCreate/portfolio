@@ -18,7 +18,7 @@
         "url": "https://trackerx-m.herokuapp.com/"
     },
     {
-        "name": "Social Network - amJam",
+        "name": "Social Network",
         "directory": "social_network",
         "description": "A musician-oriented social network for organizing casual jam sessions.",
         "features": [
