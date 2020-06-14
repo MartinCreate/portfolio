@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "homepage": "https://MartinCreate.github.io/portfolio",
-    "scripts": {},
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
