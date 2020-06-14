@@ -1,6 +1,6 @@
 [
     {
-        "name": "trackerX",
+        "name": "TrackerX",
         "directory": "trackerX",
         "description": "(work-in-progress) A workout tracker that allows the user to create workouts, track them, and view the tracked data.",
         "features": [
@@ -15,7 +15,8 @@
             "add up to 2 units of measure"
         ],
         "tech": ["Node.js", "Express", "React", "PostgreSQL"],
-        "url": "https://trackerx-m.herokuapp.com/"
+        "url": "https://trackerx-m.herokuapp.com/",
+        "github": "https://github.com/MartinCreate/workout-tracker"
     },
     {
         "name": "Social Network",
@@ -38,7 +39,8 @@
             "Express",
             "PostgreSQL"
         ],
-        "url": "https://bc-socialnetwork.herokuapp.com/"
+        "url": "https://bc-socialnetwork.herokuapp.com/",
+        "github": "https://github.com/MartinCreate/bc-socialnetwork"
     },
     {
         "name": "Imageboard",
@@ -51,7 +53,8 @@
             "infinite scroll"
         ],
         "tech": ["Vue.js", "AWS", "Node.js", "Express", "PostgreSQL"],
-        "url": "https://bc-imageboard.herokuapp.com/"
+        "url": "https://bc-imageboard.herokuapp.com/",
+        "github": "https://github.com/MartinCreate/bc-imageboard"
     },
     {
         "name": "Petition",
@@ -66,8 +69,9 @@
             "register/login",
             "add/edit profile information"
         ],
-        "tech": ["Node.js", "Handlebars", "Express", "PostgreSQL"],
-        "url": "https://petitionmartin.herokuapp.com/"
+        "tech": ["Handlebars", "jQuery", "Node.js", "Express", "PostgreSQL"],
+        "url": "https://petitionmartin.herokuapp.com/",
+        "github": "https://github.com/MartinCreate/bc-petition"
     },
     {
         "name": "Connect 4",
@@ -79,8 +83,9 @@
             "scorekeeping",
             "(Reset Score) clears board and resets score"
         ],
-        "tech": ["Javascript", "HTML", "CSS"],
-        "url": "https://martincreate.github.io/bc-connect4/"
+        "tech": ["Javascript", "jQuey", "HTML", "CSS"],
+        "url": "https://martincreate.github.io/bc-connect4/",
+        "github": "https://github.com/MartinCreate/bc-connect4"
     },
     {
         "name": "Spotify Search",
@@ -92,7 +97,8 @@
             "search by artist/album",
             "infinite scroll"
         ],
-        "tech": ["Ajax", "Handlebars", "Node.js", "Spotify API"],
-        "url": ""
+        "tech": ["Ajax", "Handlebars", "jQuery", "Node.js", "Spotify API"],
+        "url": "",
+        "github": "https://github.com/MartinCreate/bc-spotify-search-api"
     }
 ]

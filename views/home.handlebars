@@ -1,22 +1,36 @@
-    <header>
+    <header id="top">
         <div id="name-header">
-            <p class="my-name">MARTIN PAUL</p>
-            <p class="job-title">Web Developer</p>
+            <p class="my-name animate__animated animate__fadeInUp">MARTIN PAUL</p>
+            <p class="job-title animate__animated animate__fadeInUp">Web Developer</p>
         </div>
         <div id="about-me">
-            {{!-- <p>_</p> --}}
             {{!-- <p>I strive to create web-sites and web-applications that are effortless for the user to navigate in addition to being aesthetically pleasing.</p> --}}
         </div>
-        {{!-- <div id="header-arrow">Arrow Down</div> --}}
-        <div class="down-arrow-div">
-            <img class="down-arrow" src="/img/down.png"/>
-        </div>
+        <a href="#about" class="down-arrow-div">
+            <img class="down-arrow animate__animated animate__fadeInDown" src="/img/down.png"/>
+        </a>
     </header>
-    <section class="section tech-stack-section">
-        <div class="techstack-info">
-            <p class="section-header">Tech Stack</p>
+
+    <section class="section about-section" id="about">
+        <p class="section-header">About Me</p>
+        <img id="selfie" src="/img/selfie.jpg" />
+        <div id="bio">
+            Hi! My name is Martin, I'm full-stack web developer with a focus on javascript and a background in business. I strive to create intuitive, aesthetically pleasing UX and UI that most effectively serve the product for which they were built.
         </div>
-        <div id="tech-stack-divs">
+        <a href="" target="_blank" id="resume-link">View Resume</a>
+        <a href="#skills" class="down-arrow-div">
+            <img class="down-arrow" src="/img/down.png"/>
+        </a>
+    </section>
+
+    <section class="section transition">
+    </section>
+
+    <section class="section skills-section" id="skills">
+        <div class="skills-info">
+            <p class="section-header">Skills</p>
+        </div>
+        <div id="skills-divs">
             <div class="stack front-end-div">
                 <h4>Front End</h4>
                 <p>
@@ -148,7 +162,7 @@
                 Github</p>
             </div>
         </div>
-        {{!-- <div id="tech-stack-divs">
+        {{!-- <div id="skills-divs">
             <div class="stack front-end-div">
                 <h4>Front End</h4>
                 <p>JavaScript (ES6)</p>
@@ -215,11 +229,11 @@
 
         </div> --}}
 
-
-
-        {{!-- <div class="arrow-down">Arrow Down</div> --}}
+        <a href="#projects" class="down-arrow-div">
+            <img class="down-arrow" src="/img/down.png"/>
+        </a>
     </section>
-    <section class="section projects">
+    <section class="section" id="projects">
         <p class="projects-header section-header">Projects</p>
         <div id="projects-div">
             {{> list }}

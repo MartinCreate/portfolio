@@ -7,10 +7,9 @@
                 <img class='project-img' src='/{{directory}}/projPic.png'>
             </a>
         </div>
-        {{!-- <div class="project-name-div"> --}}
+        
         <p class="project-name">{{name}}</p>
         <img class="proj-info-png" src="/img/info.png" />
-        {{!-- </div> --}}
 
         <div class="project-info">
 
@@ -19,14 +18,19 @@
 
             <div class="tech-div">{{#each tech}} <span class="tech">{{this}}</span> {{/each}}</div>
 
-            {{!-- <div class="features-div-container">
-                <span class="features-title">Features</span> 
-                <div class="features-div">
-                    {{#each features}} <li>{{this}}</li> {{/each}}
+            {{!-- <p class="show-features">Features</p> --}}
 
-                </div>
-            </div> --}}
+            <a href="{{github}}" target="_blank"><p class="proj-git proj-link">View Code</p></a>
+            <a href="{{url}}" target="_blank"><p class="proj-view proj-link">View Project</p></a>
+
         </div>
+        {{!-- <div class="features-div-container">
+            <span class="features-title">Features</span> 
+            <div class="features-div">
+                {{#each features}} <li>{{this}}</li> {{/each}}
+
+            </div>
+        </div> --}}
     </div>
 {{/projJson}}
 
