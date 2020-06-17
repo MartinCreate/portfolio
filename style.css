@@ -99,11 +99,11 @@ header {
 }
 
 #selfie {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
+    filter: grayscale(10%);
 }
 
 #bio {
